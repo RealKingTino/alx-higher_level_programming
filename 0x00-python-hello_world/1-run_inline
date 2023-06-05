@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pycode=$PYCODE
+
+python3 -c $PYCODE
