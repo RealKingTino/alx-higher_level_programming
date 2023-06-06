@@ -8,9 +8,7 @@ if number >= 0:
 else:
     last_digit = number % -10
 
-last_digit = abs(number) % 10
-
-print("Last digit of", number, "is", last_digit, end="")
+print("Last digit of {} is {}".format(number, last_digit), end="")
 
 if last_digit > 5:
     print(" and is greater than 5")
