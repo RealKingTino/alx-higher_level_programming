@@ -3,7 +3,8 @@ def uppercase(str):
     for letter in str:
         x = ord(letter)
         if x >= 97 and x <= 122:
-            x -= 32
-            print(chr(x), end="")
+            num = 32
         else:
-            print(letter, end="")
+            num = 0
+        print("{:c}".format(ord(str[i]) - num), end="")
+    print()
