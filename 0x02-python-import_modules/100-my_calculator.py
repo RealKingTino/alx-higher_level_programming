@@ -24,8 +24,7 @@ elif operator == "*":
 elif operator == "/":
     result = div(a, b)
 else:
-    print("Unknown operator. Available operators: +, -, * and /")
+    print("Unknown operator. Available operators: +, -, *, and /")
     sys.exit(1)
 
 print(f"{a} {operator} {b} = {result}")
-sys.exit(0)
