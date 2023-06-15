@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 def complex_delete(a_dictionary, value):
-    def complex_delete(a_dictionary, value):
     key_to_delete = []
     for key, val in a_dictionary.items():
         if val == value:
