@@ -20,7 +20,7 @@ class Square:
         Attributes:
             __size (int): The private instance attribute to store the
             size of the square.
-            __position (tuple): The private instance attribute to store 
+            __position (tuple): The private instance attribute to store
             the position of the square.
         """
         self.__size = size
