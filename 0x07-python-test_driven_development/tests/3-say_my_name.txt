@@ -1,0 +1,41 @@
+TEST FOR MODULE 3-say_my_name.py
+================================
+
+import function:
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Check module doc:
+>>> mod_doc = __import__('3-say_my_name').__doc__
+>>> len(mod_doc) > 1
+True
+
+Check function doc:
+>>> func_doc = say_my_name.__doc__
+>>> len(func_doc) > 1
+True
+
+Print the name "John Smith":
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+Print the name "Walter White":
+>>> say_my_name("Walter", "White")
+My name is Walter White
+
+Print the name "Bob" with no last name:
+>>> say_my_name("Bob")
+My name is Bob
+
+Try passing an integer as first name:
+>>> try:
+...     say_my_name(12, "White")
+... except Exception as e:
+...     print(e)
+first_name must be a string
+
+Try passing an integer as last name:
+>>> try:
+...     say_my_name("John", 12)
+... except Exception as e:
+...     print(e)
+last_name must be a string
