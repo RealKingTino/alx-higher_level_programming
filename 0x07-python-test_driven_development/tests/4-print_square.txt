@@ -1,0 +1,44 @@
+TEST FOR MODULE 4-print_square.py
+================================
+
+import function:
+>>> print_square = __import__('4-print_square').print_square
+
+Check function doc:
+>>> func_doc = print_square.__doc__
+>>> len(func_doc) > 1
+True
+
+Print a square of size 4:
+>>> print_square(4)
+####
+####
+####
+####
+
+Print a square of size 10:
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+Print a square of size 0:
+>>> print_square(0)
+
+Print a square of size 1:
+>>> print_square(1)
+#
+
+Try passing a negative size:
+>>> try:
+...     print_square(-1)
+... except Exception as e:
+...     print(e)
+size must be >= 0
