@@ -49,9 +49,6 @@ class Rectangle:
 
     def __str__(self):
         """Return a string representation of the rectangle"""
-        result = ""
-        result = (("#" * self.__width + "\n") * self.__height)
         if self.__width == 0 or self.__height == 0:
-            result = ""
-
-        return result
+            return ""
+        return '\n'.join([str(self.print_symbol) * self.__width] * self.__height)
