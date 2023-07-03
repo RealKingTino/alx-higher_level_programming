@@ -8,7 +8,7 @@ class Rectangle:
         """Initialize a rectangle object with given width and height"""
         self.width = width
         self.height = height
-    
+
     @property
     def width(self):
         """Getter method for retrieving the width of the rectangle"""
@@ -51,4 +51,5 @@ class Rectangle:
         """Return a string representation of the rectangle"""
         if self.__width == 0 or self.__height == 0:
             return ""
-        return '\n'.join([str(self.print_symbol) * self.__width] * self.__height)
+        row = "#" * self.__width
+        return (row + "\n") * self.__height
