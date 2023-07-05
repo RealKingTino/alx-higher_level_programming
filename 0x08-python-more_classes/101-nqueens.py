@@ -57,7 +57,7 @@ def print_solutions(solutions):
         chessboard = []
         for row in range(len(solution)):
             chessboard.append([row, solution[row]])
-    print(chessboard)
+        print(chessboard)
 
 
 if __name__ == "__main__":
