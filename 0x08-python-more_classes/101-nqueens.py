@@ -4,6 +4,7 @@
 
 import sys
 
+
 def solve_nqueens(N):
     """
     Solve the N Queens problem and return a list of solutions.
@@ -14,11 +15,13 @@ def solve_nqueens(N):
     place_queen(0, queens, N, solutions)
     return solutions
 
+
 def place_queen(row, queens, N, solutions):
     """
     Recursive function to place queens on the chessboard.
     Backtracking is used to find all valid solutions.
     """
+
     if row == N:
         # All queens have been successfully placed
         solutions.append(list(queens))
@@ -32,16 +35,19 @@ def place_queen(row, queens, N, solutions):
             # Backtrack by removing the last queen and trying other positions
             queens.pop()
 
+
 def is_valid(row, col, queens):
     """
     Check if placing a queen at position (row, col) is valid.
     Return True if there are no conflicts, False otherwise.
     """
     for r, c in enumerate(queens):
-        # Check if the current queen conflicts with any previously placed queens
+        # Check if the current queen conflicts with
+        # any previously placed queens
         if c == col or r + c == row + col or r - c == row - col:
             return False
     return True
+
 
 def print_solutions(solutions):
     """
@@ -51,7 +57,8 @@ def print_solutions(solutions):
         chessboard = []
         for row in range(len(solution)):
             chessboard.append([row, solution[row]])
-        print(chessboard)
+    print(chessboard)
+
 
 if __name__ == "__main__":
     # Validate the input arguments
