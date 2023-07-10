@@ -2,6 +2,7 @@
 """class MyList that inherits from list
 """
 
+
 class MyList(list):
     """
     Custom list class that inherits from the built-in list class.
