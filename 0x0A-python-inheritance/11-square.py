@@ -7,6 +7,7 @@
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 Rectangle = __import__('9-rectangle').Rectangle
 
+
 class Square(Rectangle):
     """
     A Square class shape, inheirts from BaseGeometry
@@ -28,7 +29,7 @@ class Square(Rectangle):
         A function that calculates the area of the Square
         """
         return self.__size * self.__size
-        
+
     def __str__(self):
         """
         str funtion to print with/height
