@@ -51,7 +51,7 @@ class Base:
         """Return the list of dictionaries represented by json_string.
 
         Args:
-            json_string (str): A JSON string representing a list of dictionaries.
+            json_string (str): A JSON string representing a list of dic
 
         Returns:
             list: The list of dictionaries represented by the JSON string.
