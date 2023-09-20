@@ -22,11 +22,11 @@ if __name__ == "__main__":
     WHERE states.name = %s
     """
     cursor.execute(query, (state_name,))
-    
+
     # Fetch all city names and join them with a comma and space
     cities = [row[0] for row in cursor.fetchall()]
     result = ", ".join(cities)
-    
+
     print(result)
 
     cursor.close()
